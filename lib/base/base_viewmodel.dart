@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../remote/local/shared_prefs.dart';
 import '../remote/service/api_client.dart';
 import 'di/locator.dart';
-import '../main.dart';
 
 
 abstract class BaseViewModel extends ChangeNotifier {
@@ -61,20 +60,15 @@ abstract class BaseViewModel extends ChangeNotifier {
       return;
     }
 
-    try {
-      onAppear.call();
-    } catch (_) {}
   }
 
-  external void onAppear();
+
 
   void disAppear() {
     if (_isFirst) return;
 
-    try {
-      onDisAppear.call();
-    } catch (_) {}
+
   }
 
-  external void onDisAppear();
+
 }

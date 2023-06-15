@@ -2,6 +2,9 @@ import 'package:json_annotation/json_annotation.dart';
 
 @JsonSerializable()
 class AlbumModel {
+
+  @JsonKey(name: "id")
+  final int id;
   @JsonKey(name: 'image')
   final String image;
 
@@ -11,5 +14,5 @@ class AlbumModel {
   @JsonKey(name: 'description')
   final String description;
 
-  AlbumModel({required this.image,required this.title,required this.description});
+  AlbumModel({required this.id, required this.image,required this.title,required this.description});
 }

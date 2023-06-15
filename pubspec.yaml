@@ -30,7 +30,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
   flutter_localizations:
     sdk: flutter
 
@@ -70,10 +69,8 @@ dependencies:
   hive: ^2.0.4
   hive_flutter: ^1.1.0
 
-  ffi: ^2.0.2
-
   #dich ngon ngu
-  intl: any
+  intl: 0.18.0
 
   audioplayers: ^4.1.0
 
@@ -140,3 +137,10 @@ flutter_gen:
     flare_flutter: true
     rive: true
     lottie: true
+
+flutter_intl:
+  enabled: true
+  main_locale: en
+  arb_dir: lib/l10n
+  output_dir: lib/generated
+  use_deferred_loading: false

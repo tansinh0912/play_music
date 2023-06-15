@@ -14,18 +14,42 @@ import 'package:flutter/services.dart';
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/ic_back.svg
+  SvgGenImage get icBack => const SvgGenImage('assets/icons/ic_back.svg');
+
+  SvgGenImage get icDot => const SvgGenImage('assets/icons/ic_dot.svg');
+
+  SvgGenImage get icMenu => const SvgGenImage('assets/icons/ic_menu.svg');
+
+  SvgGenImage get icGroup => const SvgGenImage('assets/icons/ic_group.svg');
+
+  SvgGenImage get icOptions => const SvgGenImage('assets/icons/ic_options.svg');
+
   /// File path: assets/icons/ic_drawer.svg
   SvgGenImage get icDrawer => const SvgGenImage('assets/icons/ic_drawer.svg');
+
+  /// File path: assets/icons/ic_next.svg
+  SvgGenImage get icNext => const SvgGenImage('assets/icons/ic_next.svg');
+
+  /// File path: assets/icons/ic_play.svg
+  SvgGenImage get icPlay => const SvgGenImage('assets/icons/ic_play.svg');
 
   /// File path: assets/icons/ic_search.svg
   SvgGenImage get icSearch => const SvgGenImage('assets/icons/ic_search.svg');
 
   /// List of all assets
-  List<SvgGenImage> get values => [icDrawer, icSearch];
+  List<SvgGenImage> get values => [icBack, icDrawer, icNext, icPlay, icSearch];
 }
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
+
+  /// File path: assets/images/im_color.png
+  AssetGenImage get imColor =>
+      const AssetGenImage('assets/images/im_color.png');
+
+  /// File path: assets/images/im_disk.png
+  AssetGenImage get imDisk => const AssetGenImage('assets/images/im_disk.png');
 
   /// File path: assets/images/im_headphone.png
   AssetGenImage get imHeadphone =>
@@ -35,8 +59,32 @@ class $AssetsImagesGen {
   AssetGenImage get imMaucam =>
       const AssetGenImage('assets/images/im_maucam.png');
 
+  /// File path: assets/images/im_micro.png
+  AssetGenImage get imMicro =>
+      const AssetGenImage('assets/images/im_micro.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [imHeadphone, imMaucam];
+  List<AssetGenImage> get values =>
+      [imColor, imDisk, imHeadphone, imMaucam, imMicro];
+}
+
+class $AssetsMusicsGen {
+  const $AssetsMusicsGen();
+
+  /// File path: assets/musics/Lac.mp3
+  String get lac => 'assets/musics/Lac.mp3';
+
+  /// File path: assets/musics/khi_phai_quen_di.mp3
+  String get khiPhaiQuenDi => 'assets/musics/khi_phai_quen_di.mp3';
+
+  /// File path: assets/musics/nang_tho.mp3
+  String get nangTho => 'assets/musics/nang_tho.mp3';
+
+  /// File path: assets/musics/tri_ky.mp3
+  String get triKy => 'assets/musics/tri_ky.mp3';
+
+  /// List of all assets
+  List<String> get values => [lac, khiPhaiQuenDi, nangTho, triKy];
 }
 
 class Assets {
@@ -44,6 +92,7 @@ class Assets {
 
   static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
+  static const $AssetsMusicsGen musics = $AssetsMusicsGen();
 }
 
 class AssetGenImage {
